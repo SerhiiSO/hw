@@ -1,0 +1,36 @@
+.activity {
+  padding-bottom: 94px;
+}
+.activity-head {
+  font-weight: 700;
+  color: var(--secondary-font-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.activity__list {
+  @extend %list;
+  display: flex;
+  margin-top: 50px;
+}
+.activity__item:not(:last-child) {
+  margin-right: 30px;
+}
+.activity__thumb {
+  position: relative;
+}
+.activity__decsr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px;
+  color: var(--primary-white);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,46 @@
+.advant-logos-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__thumb {
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.advantages__icon {
+  height: 70px;
+  width: 70px;
+}
+
+.advantages__list {
+  @extend %list;
+  display: flex;
+}
+
+.advantages__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.advantages__subtitle {
+  font-weight: 700;
+  line-height: 1.14;
+  color: #212121;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages__descr {
+  line-height: 1.7;
+  color: var(--primary-font-color);
+  letter-spacing: 0.03em;
+}

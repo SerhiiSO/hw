@@ -1,0 +1,35 @@
+.about {
+  background-color: #f5f4fa;
+}
+
+.about__list {
+  @extend %list;
+  display: flex;
+}
+
+.about__item {
+  background: var(--primary-white);
+  box-shadow: var(--box-shadow);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.about__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+}
+.about__thumb {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.about__descr {
+  color: var(--primary-font-color);
+  font-size: 16px;
+  line-height: 1.17;
+  margin-top: 10px;
+}

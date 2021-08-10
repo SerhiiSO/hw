@@ -1,0 +1,19 @@
+.social {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.social__pic {
+  width: 20px;
+  height: 20px;
+}
+.social__link {
+  @extend %social;
+  fill: var(--social-color);
+  &--footer {
+    @extend %social;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--logo-footer-color);
+  }
+}
